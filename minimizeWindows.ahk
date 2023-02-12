@@ -14,7 +14,8 @@ while (true)
     }
   
     ; On unfocus show taskbar
-    if (!WinActive("Alacritty") && !WinActive("Task Switcher") && !GetKeyState("LAlt", "P"))
+    WinGetTitle, Title, A
+    if (Title != "Alacritty" && Title != "Task Switcher" && !GetKeyState("LAlt", "P"))
     {
         if (focused) {
             Sleep, 200
@@ -24,7 +25,7 @@ while (true)
     }
     
     ; On focus, minimize other apps and hide taskbar
-    if (WinActive("Alacritty") && !GetKeyState("LAlt", "P"))
+    if (Title == "Alacritty" && !GetKeyState("LAlt", "P"))
     {
         Run "minimize.exe"
         if (!focused) {
