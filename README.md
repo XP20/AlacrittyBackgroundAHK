@@ -4,14 +4,14 @@ This is an autohotkey script to "get" background images for alacritty.
 
 It works by minimizing other background windows when you focus alacritty.
 
-I perrsonally use alacritty in fullscreen mode achieved as follows:
+I perrsonally use alacritty in fullscreen mode, which is achieved with:
 
 ```yml
 window:
   startup_mode: Fullscreen
 ```
 
-Also be sure to disable dynamic title and set the title to alacritty:
+Also be sure to disable dynamic title and set the title to **Alacritty**:
 
 ```yml
 window:
