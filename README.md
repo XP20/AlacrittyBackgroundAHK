@@ -1,5 +1,7 @@
 # AlacrittyBackgroundAHK
 
+### Use the newer one: [here](https://github.com/XP20/AlacrittyBackground)
+
 This is an autohotkey script to "get" background images for alacritty.
 
 It works by minimizing other background windows when you focus alacritty.
